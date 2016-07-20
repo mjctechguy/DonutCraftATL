@@ -12,7 +12,12 @@ recipes.addShapeless(<ic2:wrench>, [<techreborn:wrench>]);
 
 //IC2 and TR Rubber
 
-recipes.addShapeless(<ic2:misc_resource:4>, [<ic2:misc_resource:4>]);
+recipes.addShapeless(<ic2:crafting>, [<techreborn:part:32>]);
+
+recipes.addShapeless(<techreborn:part:32>, [<ic2:crafting>]);
 
 
-recipes.addShapeless(<ic2:misc_resource:4>, [<ic2:misc_resource:4>]);
+recipes.addShapeless(<ic2:misc_resource:4>, [<techreborn:part:31>]);
+
+recipes.addShapeless(<techreborn:part:31>, [<ic2:misc_resource:4>]);
+
