@@ -128,3 +128,66 @@ recipes.addShaped(<ironchest:woodCopperUpgrade>,
 [[<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
 [<ore:plateCopper>, <ore:plankWood>, <ore:plateCopper>],
 [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>]]);
+
+#Remove Chunkloader from ExtraUtil
+recipes.remove(<extrautils2:ChunkLoader>);
+
+#Saucepan
+recipes.remove(<harvestcraft:saucepanItem>);
+recipes.addShaped(<harvestcraft:saucepanItem>,
+[[null, null, null],
+[null, <ore:stickWood>, null],
+[null, <ore:ingotIron>, null]]);
+
+#RFT Mods Machine Casings
+recipes.remove(<deepresonance:machine_frame>);
+recipes.addShaped(<deepresonance:machine_frame>,
+[[<ore:ingotSteel>, <deepresonance:resonating_plate>, <ore:ingotSteel>],
+[<deepresonance:resonating_plate>, <minecraft:stone>, <deepresonance:resonating_plate>],
+[<ore:ingotSteel>, <deepresonance:resonating_plate>, <ore:ingotSteel>]]);
+
+recipes.remove(<rftools:machine_frame>);
+recipes.addShaped(<rftools:machine_frame>,
+[[<ore:ingotSteel>, <ore:gemLapis>, <ore:ingotSteel>],
+[<ore:nuggetGold>, null, <ore:nuggetGold>],
+[<ore:ingotSteel>, <ore:gemLapis>, <ore:ingotSteel>]]);
+
+#ExtraUtil Machine Casing
+recipes.remove(<extrautils2:Machine>);
+recipes.addShaped(<extrautils2:Machine>,
+[[<ore:ingotSteel>, <minecraft:redstone>, <ore:ingotSteel>],
+[<minecraft:redstone>, <ore:chestWood>, <minecraft:redstone>],
+[<ore:ingotSteel>, <minecraft:redstone>, <ore:ingotSteel>]]);
+
+#Psi
+recipes.remove(<psi:cadAssembler>);
+recipes.addShaped(<psi:cadAssembler>,
+[[<ore:ingotSteel>, <ore:dustPsi>, <ore:ingotSteel>],
+[<ore:ingotSteel>, null, <ore:ingotSteel>],
+[<ore:ingotSteel>, null, <ore:ingotSteel>]]);
+
+recipes.remove(<psi:programmer>);
+recipes.addShaped(<psi:programmer>,
+[[<ore:ingotSteel>, <minecraft:piston>, <ore:ingotSteel>],
+[<ore:ingotSteel>, null, <ore:ingotSteel>],
+[null, <ore:ingotSteel>, null]]);
+
+#Removal of Res
+recipes.remove(<enderio:blockReservoir>);
+
+#Angel Ring Recipes
+recipes.remove(<extrautils2:GoldenLasso>);
+recipes.addShaped(<extrautils2:GoldenLasso>,
+[[<ore:nuggetGold>, <minecraft:string>, <ore:nuggetGold>],
+[<minecraft:string>, <minecraft:nether_star>, <minecraft:string>],
+[<ore:nuggetGold>, <minecraft:string>, <ore:nuggetGold>]]);
+
+#Enriched Iron Mesh
+recipes.addShaped(<donuttweaks:EnrichedIronMesh>,
+[[<ore:ingotIron>, <ore:ingotIron>, null],
+[<ore:ingotIron>, <minecraft:quartz>, null],
+[null, null, null]]);
+
+#Refined Storage
+recipes.remove(<refinedstorage:quartz_enriched_iron>);
+recipes.addShapeless(<refinedstorage:quartz_enriched_iron> * 2, <donuttweaks:EnrichedIronMesh>);
