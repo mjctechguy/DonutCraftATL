@@ -162,15 +162,15 @@ recipes.addShaped(<extrautils2:Machine>,
 #Psi
 recipes.remove(<psi:cadAssembler>);
 recipes.addShaped(<psi:cadAssembler>,
-[[<ore:ingotSteel>, <ore:dustPsi>, <ore:ingotSteel>],
-[<ore:ingotSteel>, null, <ore:ingotSteel>],
-[<ore:ingotSteel>, null, <ore:ingotSteel>]]);
-
-recipes.remove(<psi:programmer>);
-recipes.addShaped(<psi:programmer>,
 [[<ore:ingotSteel>, <minecraft:piston>, <ore:ingotSteel>],
 [<ore:ingotSteel>, null, <ore:ingotSteel>],
 [null, <ore:ingotSteel>, null]]);
+
+recipes.remove(<psi:programmer>);
+recipes.addShaped(<psi:programmer>,
+[[<ore:ingotSteel>, <ore:dustPsi>, <ore:ingotSteel>],
+[<ore:ingotSteel>, null, <ore:ingotSteel>],
+[<ore:ingotSteel>, null, <ore:ingotSteel>]]);
 
 #Removal of Res
 recipes.remove(<enderio:blockReservoir>);
