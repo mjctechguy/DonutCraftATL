@@ -183,10 +183,12 @@ recipes.addShaped(<extrautils2:GoldenLasso>,
 [<ore:nuggetGold>, <minecraft:string>, <ore:nuggetGold>]]);
 
 #Enriched Iron Mesh
-recipes.addShaped(<refinedstorage:quartz_enriched_iron> * 2,
+recipes.addShaped(<donuttweaks:EnrichedIronMesh> * 2,
 [[<ore:ingotIron>, <ore:ingotIron>, null],
 [<ore:ingotIron>, <minecraft:quartz>, null],
 [null, null, null]]);
+
+mods.ic2.Compressor.addRecipe(<refinedstorage:quartz_enriched_iron>, <donuttweaks:EnrichedIronMesh>);
 
 #IE Hammer
 recipes.remove(<immersiveengineering:tool>);

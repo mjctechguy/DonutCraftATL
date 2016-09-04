@@ -9,11 +9,6 @@ recipes.remove(<minecraft:bucket>);
 recipes.addShaped(<minecraft:bucket>, [[<ore:plateIron>, null, <ore:plateIron>], [null, <ore:plateIron>, null]]);
 
 
-#Remove Gear Crafting - Forces through smeltry
-recipes.remove(<forestry:gearCopper>);
-recipes.remove(<forestry:gearBronze>);
-recipes.remove(<forestry:gearTin>);
-
 #Remove Basic Armor Types
 recipes.remove(<minecraft:iron_boots>);
 recipes.remove(<minecraft:iron_leggings>);
