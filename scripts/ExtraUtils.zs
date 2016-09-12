@@ -5,10 +5,11 @@ recipes.remove(<extrautils2:ChunkLoader>);
 
 #ExtraUtil Machine Casing
 recipes.remove(<extrautils2:Machine>);
-recipes.addShaped(<extrautils2:Machine>,
-[[<ore:ingotSteel>, <minecraft:redstone>, <ore:ingotSteel>],
-[<minecraft:redstone>, <ore:chestWood>, <minecraft:redstone>],
-[<ore:ingotSteel>, <minecraft:redstone>, <ore:ingotSteel>]]);
+recipes.remove(<extrautils2:Machine>.withTag({Type: "extrautils2:generator"}));
+recipes.remove(<extrautils2:Machine>.withTag({Type: "extrautils2:furnace"}));
+recipes.remove(<extrautils2:Machine>.withTag({Type: "extrautils2:crusher"}));
+
+
 
 #Angel Ring Recipes
 recipes.remove(<extrautils2:GoldenLasso>);
